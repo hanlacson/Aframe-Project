@@ -55,7 +55,10 @@
   <!-- test shapes as part of the scene-->
   <a-sphere position="20 0 2" color="red" radius="5"></a-sphere>
   <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
-        <a-sphere position="5 10 3" color="mediumseagreen"></a-sphere>
+        <a-sphere position="5 10 3" color="mediumseagreen" radius="1"></a-sphere>
+  </a-entity>
+  <a-entity rotation="0 5 0" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000">
+        <a-tetrahedron position="5 12 5" color="yellow" radius="1"></a-tetrahedron>
   </a-entity>
   <a-cone position="26 0 8"color="blue" radius-bottom="10" radius-top="0.2" height="30"></a-cone>
 
