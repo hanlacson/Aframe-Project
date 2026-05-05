@@ -23,6 +23,8 @@
         
         <img id="myimage" src="assets/sculpture1.png">
 
+        <img id="image2" src="assets/building.jpg">
+
       </a-assets>
 
       <!-- Camera -->
@@ -53,14 +55,14 @@
   <a-light type="point" intensity="1" position="0 4 4"></a-light>
 
   <!-- test shapes as part of the scene-->
-  <a-sphere position="20 0 2" color="red" radius="5"></a-sphere>
+  <a-sphere position="-20 0 2" color="red" radius="5"></a-sphere>
   <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
         <a-sphere position="5 10 3" color="mediumseagreen" radius="1"></a-sphere>
   </a-entity>
   <a-entity rotation="0 5 0" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000">
         <a-tetrahedron position="5 12 5" color="yellow" radius="1"></a-tetrahedron>
   </a-entity>
-  <a-cone position="26 0 8"color="blue" radius-bottom="10" radius-top="0.2" height="30"></a-cone>
+  <a-cone position="-26 0 8"color="blue" radius-bottom="10" radius-top="0.2" height="30"></a-cone>
 
    <!-- Room floor and ceiling -->
       <a-box position="0 0 -4" width="10" height="0.1" depth="6" src="#floorTexture" repeat="3 2" static-body></a-box>
@@ -116,6 +118,13 @@
        src="#myimage"></a-image>
 
        <!-- assets placed in open environment-->
+         <a-image 
+       position="90 100 0"
+       rotation="0 -45 0"
+       width="90"
+       height="200"
+       src="#image2"></a-image>
+
 
     </a-scene>
 
