@@ -18,8 +18,9 @@
         <img id="floorTexture" src="assets/woodfloor.png">
 
         <img id="skyTexture" src="assets/cityscene.png">
-        
 
+        <img id="portraitTexture" src="assets/portrait1.jpg">
+        
       </a-assets>
 
       <!-- Camera -->
@@ -51,7 +52,9 @@
   <!-- Walls -->
       <a-box position="5 3 -4" width="0.1" height="6" depth="6" color="#FFFFFF" static-body></a-box>
       <a-box position="-5 3 -4" width="0.1" height="6" depth="6" color="#FFFFFF" static-body></a-box>
-      <a-box position="4.9 3 -4" width="0.1" height="3" depth="3" color="#89CFF0" static-body></a-box>
+
+      <!--portraits-->
+      <a-box position="4.9 3 -4" width="0.1" height="3" depth="3" src="#portraitTexture" static-body></a-box>
 
       <!-- Back wall of Room 1 with opening for corridor -->
       <a-box position="-3.5 3 -7" width="3" height="6" depth="0.1" color="#FFFFFF" static-body></a-box>
