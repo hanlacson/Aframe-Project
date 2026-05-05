@@ -54,6 +54,9 @@
 
   <!-- test shapes as part of the scene-->
   <a-sphere position="20 0 2" color="red" radius="5"></a-sphere>
+  <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        <a-sphere position="5 10 3" color="mediumseagreen"></a-sphere>
+</a-entity>
 
    <!-- Room floor and ceiling -->
       <a-box position="0 0 -4" width="10" height="0.1" depth="6" src="#floorTexture" repeat="3 2" static-body></a-box>
