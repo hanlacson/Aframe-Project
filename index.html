@@ -23,8 +23,6 @@
         
         <img id="myimage" src="assets/sculpture1.png">
 
-        <img id="image2" src="assets/building.jpg">
-
       </a-assets>
 
       <!-- Camera -->
@@ -50,11 +48,12 @@
     static-body>                                                                                                                    
   </a-plane>
 
+  <!-- Lighting -->
   <a-entity light="type: directional; color: #EEE; intensity: 0.6" position="0 90 0"></a-entity>
   <a-light type="ambient" color="#445451"></a-light>
   <a-light type="point" intensity="1" position="0 4 4"></a-light>
 
-  <!-- test shapes as part of the scene-->
+  <!-- shapes as part of the scene-->
   <a-sphere position="-20 0 2" color="red" radius="5"></a-sphere>
   <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
         <a-sphere position="5 10 3" color="mediumseagreen" radius="1"></a-sphere>
@@ -118,12 +117,6 @@
        src="#myimage"></a-image>
 
        <!-- assets placed in open environment-->
-         <a-image 
-       position="90 100 0"
-       rotation="0 -45 0"
-       width="90"
-       height="200"
-       src="#image2"></a-image>
 
 
     </a-scene>
